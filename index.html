@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Thesis - Visualization Results</title>
+    <title>Heuristic Driven Scalability of GNN-based Multi-vehicle Trajectory Planning without Fine-Tuning</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: #f8f9fa;
         }
+        h1 {
+            font-size: 22px;
+            font-weight: bold;
+        }
         h2 {
             margin-top: 40px;
+        }
+        .subtitle {
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 20px;
         }
         .video-container {
             display: flex;
@@ -20,9 +29,20 @@
             margin: 20px;
             flex-wrap: wrap;
         }
-        video {
+        .video-container video {
             width: 45%;
             max-width: 400px;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+        }
+        .single-video {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .single-video video {
+            width: 80%;
+            max-width: 500px;
             border-radius: 10px;
             border: 2px solid #ddd;
         }
@@ -30,40 +50,43 @@
 </head>
 <body>
 
-    <h1>Master Thesis - Visualization Results</h1>
+    <h1>Heuristic Driven Scalability of GNN-based Multi-vehicle Trajectory Planning without Fine-Tuning</h1>
+    <p class="subtitle"><strong>Author:</strong> Ang Li <br> <strong>Technical University of Munich</strong></p>
 
     <h2>Comparison of Density</h2>
     <div class="video-container">
-        <video controls>
-            <source src="videos/density_before.mp4" type="video/mp4">
+        <video autoplay muted loop controls>
+            <source src="videos/density_1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <video controls>
-            <source src="videos/density_after.mp4" type="video/mp4">
+        <video autoplay muted loop controls>
+            <source src="videos/density_2.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
     <h2>Comparison of A*</h2>
     <div class="video-container">
-        <video controls>
-            <source src="videos/astar_before.mp4" type="video/mp4">
+        <video autoplay muted loop controls>
+            <source src="videos/astar_1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <video controls>
-            <source src="videos/astar_after.mp4" type="video/mp4">
+        <video autoplay muted loop controls>
+            <source src="videos/astar_2.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
     <h2>Comparison of Rotation</h2>
-    <div class="video-container">
-        <video controls>
-            <source src="videos/rotation_variance_base.mp4" type="video/mp4">
+    <div class="single-video">
+        <video autoplay muted loop controls>
+            <source src="videos/rotation_1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <video controls>
-            <source src="videos/rotation_variance_aug.mp4" type="video/mp4">
+    </div>
+    <div class="single-video">
+        <video autoplay muted loop controls>
+            <source src="videos/rotation_2.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
