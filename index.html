@@ -63,20 +63,7 @@
             <source src="videos/astar_after_1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-    </div>
-
-    <h2>Comparison of Rotation</h2>
-    <div class="single-video">
-        <video autoplay muted loop controls>
-            <source src="videos/rotation_variance_base.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="single-video">
-        <video autoplay muted loop controls>
-            <source src="videos/rotation_variance_aug.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <figcaption> We compare the different simulation results of inserting waypoints. The left video shows the result of distance-based heuristic function using A* algorithm. The right video shows the result of the density-based heuristic function using A* algorithm. It is clear that the right one provides a more efficient and smoother result.</figcaption>
     </div>
 
     <h2>Comparison of Density</h2>
@@ -89,7 +76,26 @@
             <source src="videos/density_after.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        <figcaption> We compare the different preplanning results of inserting waypoints. The left video shows the result of distance-based heuristic function using GNN-based algorithm. The right video shows the result of the density-based heuristic function using GNN-based algorithm. We can find out that for the left method, it is prone to have high-density blocks at the first few steps which will significantly affect the performance in the simulation stage.</figcaption>
     </div>
+
+    <h2>Comparison of Rotation</h2>
+    <div class="single-video">
+        <video autoplay muted loop controls>
+            <source src="videos/rotation_variance_base.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <figcaption> This video shows the prediction result containing steering angle and acceleration of same configuration under different rotation angles without data augmentation. </figcaption>
+    </div>
+    <div class="single-video">
+        <video autoplay muted loop controls>
+            <source src="videos/rotation_variance_aug.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <figcaption> This video shows the prediction result containing steering angle and acceleration of same configuration under different rotation angles with data augmentation. </figcaption>
+    </div>
+
+
 
 </body>
 </html>
