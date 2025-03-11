@@ -80,21 +80,28 @@
     </div>
 
     <h2>Comparison of Rotation</h2>
-    <div class="single-video">
-        <video autoplay muted loop controls>
-            <source src="videos/rotation_variance_base.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <figcaption> This video shows the prediction result containing steering angle and acceleration of same configuration under different rotation angles without data augmentation. </figcaption>
-    </div>
-    <div class="single-video">
-        <video autoplay muted loop controls>
-            <source src="videos/rotation_variance_aug.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <figcaption> This video shows the prediction result containing steering angle and acceleration of same configuration under different rotation angles with data augmentation. </figcaption>
-    </div>
-
+    <figure>
+        <!-- First video on top -->
+        <div class="single-video">
+            <video autoplay muted loop controls>
+                <source src="videos/rotation_variance_base.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <!-- Second video below -->
+        <div class="single-video">
+            <video autoplay muted loop controls>
+                <source src="videos/rotation_variance_aug.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <figcaption>
+            This figure shows the prediction results (steering angle and acceleration)
+            under different rotation angles, without(top) and with(below) data augmentation.
+        </figcaption>
+    </figure>
 
 
 </body>
